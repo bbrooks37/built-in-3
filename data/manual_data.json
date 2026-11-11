@@ -1037,553 +1037,869 @@
     }
     },
     {
-        "pageNumber": 21,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "The Flexible Full-Body Framework",
-        "subtitle": "A structure—not a one-size-fits-all exercise prescription.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "Build a session around movement patterns. Choose one option in each category that fits your body, equipment, experience, and preferences."
-            }
-        ],
-        "interactiveTable": {
-            "title": "Movement Framework",
-            "columns": [
-                { "key": "focus", "label": "Movement focus", "editable": false },
-                { "key": "bodyweight", "label": "Bodyweight option", "editable": true },
-                { "key": "weight", "label": "Weight option", "editable": true },
-                { "key": "band", "label": "Band option", "editable": true }
-            ],
-            "rows": [
-                { "id": "lower", "focus": "Lower body / squat" },
-                { "id": "push", "focus": "Push" },
-                { "id": "pull", "focus": "Pull" },
-                { "id": "hip", "focus": "Hip dominant" },
-                { "id": "core", "focus": "Core / stability" }
-            ]
+    "pageNumber": 21,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Make the Workout Yours",
+    "subtitle": "Choose, adapt, and progress at a pace that respects your starting point.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "A flexible week might include two full-body sessions, enjoyable cardio or walking, recovery, and optional recreation. That is an example—not a requirement. Beginners may need fewer sessions or shorter durations. Individual needs vary."
         },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "Which options fit the equipment and movement choices available to me?",
-            "inputFields": [
-                { "id": "p21_equip", "prompt": "The equipment I have is...", "inputType": "text" },
-                { "id": "p21_choices", "prompt": "The movement choices I will try are...", "inputType": "text" }
-            ]
+        {
+            "type": "paragraph",
+            "text": "Start conservatively. Use movements you can perform with control. Add time, repetitions, or resistance gradually—one change at a time. Stop if a movement causes pain or feels unsafe. Seek qualified guidance for injury, medical conditions, pregnancy/postpartum needs, or special considerations."
         }
-    },
-    {
-        "pageNumber": 22,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    ],
+    "interactiveTable": {
         "title": "Make the Workout Yours",
-        "subtitle": "Choose, adapt, and progress at a pace that respects your starting point.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "A flexible week might include full-body sessions, enjoyable cardio, walking, and recovery. Map out your personal training rhythm."
-            }
+        "columns": [
+            { "key": "day", "label": "Day", "editable": false },
+            { "key": "focus", "label": "Possible focus", "editable": false },
+            { "key": "choice", "label": "My choice", "editable": true }
         ],
-        "interactiveTable": {
-            "title": "Weekly Rhythm",
-            "columns": [
-                { "key": "day", "label": "Day", "editable": false },
-                { "key": "focus", "label": "Possible focus", "editable": false },
-                { "key": "mychoice", "label": "My choice", "editable": true }
-            ],
-            "rows": [
-                { "id": "mon", "day": "Monday", "focus": "Full Body A" },
-                { "id": "tue", "day": "Tuesday", "focus": "Cardio / movement" },
-                { "id": "wed", "day": "Wednesday", "focus": "Recovery / mobility" },
-                { "id": "thu", "day": "Thursday", "focus": "Full Body B" },
-                { "id": "fri", "day": "Friday", "focus": "Cardio / movement" },
-                { "id": "sat", "day": "Saturday", "focus": "Optional activity or rest" },
-                { "id": "sun", "day": "Sunday", "focus": "Rest and plan" }
-            ]
+        "rows": [
+            { "id": "row1", "day": "Monday", "focus": "Full Body A", "choice": "" },
+            { "id": "row2", "day": "Tuesday", "focus": "Cardio / movement", "choice": "" },
+            { "id": "row3", "day": "Wednesday", "focus": "Recovery / mobility", "choice": "" },
+            { "id": "row4", "day": "Thursday", "focus": "Full Body B", "choice": "" },
+            { "id": "row5", "day": "Friday", "focus": "Cardio / movement", "choice": "" },
+            { "id": "row6", "day": "Saturday", "focus": "Optional activity or rest", "choice": "" },
+            { "id": "row7", "day": "Sunday", "focus": "Rest and plan", "choice": "" }
+        ]
+    },
+    "middleCallout": {
+        "text": "Which options fit the equipment and movement choices available to me?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "Which options fit the equipment and movement choices available to me?",
+        "steps": [
+            "Look at the movement categories: lower body, push, pull, hip-dominant, and core/stability.",
+            "Choose one appropriate option in each category—or fewer if you are new or need to start gently.",
+            "Use bodyweight, weights, bands, or a mix. You do not need every type of equipment.",
+            "Record your choices and adjust if anything causes pain or feels unsafe."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: You might choose a bodyweight squat, dumbbell press, band row, glute bridge, and a comfortable core stability option."
         },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "What is a realistic training rhythm for the life I have right now?",
-            "inputFields": [
-                { "id": "p22_rhythm", "prompt": "My realistic weekly rhythm is...", "inputType": "text" },
-                { "id": "p22_adjust", "prompt": "One adjustment that will help me follow it is...", "inputType": "text" }
-            ]
-        }
-    },
-    {
-        "pageNumber": 23,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Recovery Is Part of the Build",
-        "subtitle": "You cannot build sustainably if every day is maximum effort.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "Recovery includes sleep, rest, lighter movement, stress management, and knowing when to ask for help. It is not laziness. It is part of\nmaintaining capacity.\nNotice persistent fatigue, soreness, irritability, difficulty focusing, repeated drops in performance, or consistently poor sleep. These signals\ndo not diagnose a condition, but they can be reasons to review your plan and seek professional advice when needed.\nWhere am I treating exhaustion like proof that I am doing enough?"
+        "inputFields": [
+            { 
+                "id": "p21_equipment", 
+                "prompt": "The equipment I have is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p21_movement_choices", 
+                "prompt": "The movement choices I will try are...", 
+                "inputType": "text" 
             }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p23_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p23_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "A flexible structure makes it easier to train with the resources and preferences you have."
         }
+    }
     },
     {
-        "pageNumber": 24,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "pageNumber": 22,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Food Without the All-or-Nothing Cycle",
+    "subtitle": "Build a way of eating you can live with.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Food choices are influenced by culture, budget, time, family, access, health, and preference. A useful routine is not the most restrictive one. It is one that supports your needs and can be repeated."
+        },
+        {
+            "type": "paragraph",
+            "text": "A flexible meal can include a protein source, a carbohydrate source, fruit or vegetables, and fats. This is a planning prompt, not an individualized nutrition prescription. Adapt portions and choices to your needs."
+        },
+        {
+            "type": "callout",
+            "items": [
+                "Choose meals you enjoy and can prepare.",
+                "Keep convenient options available for busy days.",
+                "Plan groceries around your actual week and budget.",
+                "Avoid treating one meal as proof that the whole day is ruined.",
+                "Seek qualified nutrition advice for medical or specialized needs."
+            ]
+        }
+    ],
+    "middleCallout": {
+        "text": "What food routine would make my week easier instead of making me feel controlled by it?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What is a realistic training rhythm for the life I have right now?",
+        "steps": [
+            "Look at your actual week, including work, family, sleep, and other commitments.",
+            "Choose a training frequency that leaves room for recovery.",
+            "Add enjoyable movement or rest where it fits; avoid treating the sample schedule as a rule.",
+            "Review after two weeks and adjust based on energy, comfort, and consistency."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Two full-body sessions and a couple of walks may be a more useful starting point than an ambitious six-day plan."
+        },
+        "inputFields": [
+            { 
+                "id": "p22_weekly_rhythm", 
+                "prompt": "My realistic weekly rhythm is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p22_adjustment", 
+                "prompt": "One adjustment that will help me follow it is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "The best plan is one you can repeat safely in the life you actually live."
+        }
+    }
+    },
+    {
+    "pageNumber": 23,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Recovery Is Part of the Build",
+    "subtitle": "You cannot build sustainably if every day is maximum effort.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Recovery includes sleep, rest, lighter movement, stress management, and knowing when to ask for help. It is not laziness. It is part of maintaining capacity."
+        },
+        {
+            "type": "paragraph",
+            "text": "Notice persistent fatigue, soreness, irritability, difficulty focusing, repeated drops in performance, or consistently poor sleep. These signals do not diagnose a condition, but they can be reasons to review your plan and seek professional advice when needed."
+        },
+        {
+            "type": "callout",
+            "title": "The next brick",
+            "text": "Protect one recovery action this week and treat it as a real commitment."
+        }
+    ],
+    "middleCallout": {
+        "text": "Where am I treating exhaustion like proof that I am doing enough?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What food routine would make my week easier instead of making me feel controlled by it?",
+        "steps": [
+            "Think about the busiest days in your week and when food decisions become difficult.",
+            "Choose a few meals or snacks you enjoy and can access within your budget.",
+            "Prepare one convenient option or make a short grocery plan.",
+            "Keep flexibility: one meal does not define your whole routine."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Having two easy meal options available can reduce last-minute stress without requiring a strict meal plan."
+        },
+        "inputFields": [
+            { 
+                "id": "p23_food_choice", 
+                "prompt": "A food choice that works for me is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p23_make_easier", 
+                "prompt": "One way I'll make it easier is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Practical food routines should support your life, not create another source of pressure."
+        }
+    }
+    },
+    {
+    "pageNumber": 24,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "The People Around You",
+    "subtitle": "Your environment includes the voices you hear most often.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "People influence what feels normal, possible, and acceptable. Healthy relationships do not require everyone to share your goals. They do require respect, honesty, and room for each person to grow."
+        }
+    ],
+    "interactiveTable": {
         "title": "The People Around You",
-        "subtitle": "Your environment includes the voices you hear most often.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "People influence what feels normal, possible, and acceptable. Healthy relationships do not require everyone to share your goals. They do\nrequire respect, honesty, and room for each person to grow.\nRelationship / circle How I feel after time together What may help\nWho helps me become more honest, grounded, and accountable? How do I show up for them?\nLET'S WORK THROUGH IT A BUILDER'S REFLECTION"
-            }
+        "columns": [
+            { "key": "relationship", "label": "Relationship / circle", "editable": true },
+            { "key": "feeling", "label": "How I feel after time together", "editable": true },
+            { "key": "help", "label": "What may help", "editable": true }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p24_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p24_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
-        }
+        "rows": [
+            { "id": "row1", "relationship": "", "feeling": "", "help": "" },
+            { "id": "row2", "relationship": "", "feeling": "", "help": "" },
+            { "id": "row3", "relationship": "", "feeling": "", "help": "" }
+        ]
     },
-    {
-        "pageNumber": 25,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Nutrition Planning",
-        "subtitle": "Fueling your body with intention.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Plan your meals around what fuels your performance and recovery." }
+    "middleCallout": {
+        "text": "Who helps me become more honest, grounded, and accountable? How do I show up for them?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "Where am I treating exhaustion like proof that I am doing enough?",
+        "steps": [
+            "Notice where you are consistently pushing through fatigue.",
+            "Check whether sleep, workload, stress, or training demands need attention.",
+            "Choose one recovery action that is realistic: rest, lighter movement, a more consistent bedtime, or asking for help.",
+            "If symptoms persist or concern you, seek appropriate professional advice."
         ],
-        "interactiveTable": {
-            "title": "Daily Fuel Planner",
-            "columns": [
-                { "key": "meal", "label": "Meal / Time", "editable": false },
-                { "key": "protein", "label": "Protein Source", "editable": true },
-                { "key": "carbs", "label": "Carbs / Veg", "editable": true }
-            ],
-            "rows": [
-                { "id": "m1", "meal": "Breakfast" },
-                { "id": "m2", "meal": "Lunch" },
-                { "id": "m3", "meal": "Dinner" },
-                { "id": "m4", "meal": "Snacks" }
-            ]
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Replacing an intense session with rest or gentle movement can be a thoughtful adjustment—not a failure."
         },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "What is one fueling change that will support my energy levels this week?",
-            "inputFields": [
-                { "id": "p25_fuel", "prompt": "My nutrition focus will be...", "inputType": "text" }
-            ]
-        }
-    },
-    {
-        "pageNumber": 26,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Boundaries Without Guilt",
-        "subtitle": "A boundary communicates what you can participate in and what you will do.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "Boundaries are not tools for controlling other people. They help you communicate limits and protect responsibilities, safety, and values. A\nboundary may involve time, communication, money, privacy, or emotional energy.\nI can ____. I cannot ____. If ____ happens, I will ____.\nWhere am I saying yes when I mean no—or saying nothing and hoping someone will guess?\nChoose one small boundary. Plan how to communicate it calmly and safely."
+        "inputFields": [
+            { 
+                "id": "p24_recovery_sign", 
+                "prompt": "A sign I need more recovery is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p24_recovery_action", 
+                "prompt": "One recovery action I will protect is...", 
+                "inputType": "text" 
             }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p26_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p26_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Recovery supports your ability to keep showing up over time."
         }
+    }
     },
     {
-        "pageNumber": 27,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "pageNumber": 25,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Communication Is Part of Character",
+    "subtitle": "The way you speak can build trust or slowly spend it.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "You cannot control how every person receives your words. You can work on being clear, respectful, honest, and willing to repair harm. Communication is not only talking. It is listening, asking, and following through."
+        },
+        {
+            "type": "callout",
+            "title": "A better conversation",
+            "items": [
+                "Describe what happened without exaggerating.",
+                "Explain the impact without attacking character.",
+                "Make a clear request.",
+                "Listen to the other person's view.",
+                "Own your part and agree on a next step where possible."
+            ]
+        }
+    ],
+    "middleCallout": {
+        "text": "What conversation have I been delaying because I do not know how to begin?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "Who helps me become more honest, grounded, and accountable? How do I show up for them?",
+        "steps": [
+            "Think about the people you spend the most time with.",
+            "Notice which relationships make room for honesty, respect, and growth.",
+            "Consider what you contribute: listening, encouragement, reliability, or boundaries.",
+            "Choose one way to invest in a healthy connection this week."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: A short check-in or following through on something you promised can strengthen trust."
+        },
+        "inputFields": [
+            { 
+                "id": "p25_connect_person", 
+                "prompt": "A person I want to connect with is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p25_show_up", 
+                "prompt": "One way I can show up is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Supportive relationships are built through mutual respect and repeated actions."
+        }
+    }
+    },
+    {
+    "pageNumber": 26,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Boundaries Without Guilt",
+    "subtitle": "A boundary communicates what you can participate in and what you will do.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Boundaries are not tools for controlling other people. They help you communicate limits and protect responsibilities, safety, and values. A boundary may involve time, communication, money, privacy, or emotional energy."
+        },
+        {
+            "type": "callout",
+            "text": "I can ___. I cannot ___. If ___ happens, I will ___."
+        },
+        {
+            "type": "callout",
+            "text": "Choose one small boundary. Plan how to communicate it calmly and safely."
+        }
+    ],
+    "middleCallout": {
+        "text": "Where am I saying yes when I mean no—or saying nothing and hoping someone will guess?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What conversation have I been delaying because I do not know how to begin?",
+        "steps": [
+            "Name the topic and the outcome you hope for.",
+            "Write what happened in clear, specific language without attacking the other person's character.",
+            "Decide what you need to ask for or understand.",
+            "Choose a respectful, safe time to begin—and be willing to listen."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: \"I'd like us to talk about how we divide responsibilities. Can we find time tonight?\" is a clearer opening than starting with blame."
+        },
+        "inputFields": [
+            { 
+                "id": "p26_conversation", 
+                "prompt": "The conversation I need to have is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p26_opening_sentence", 
+                "prompt": "My opening sentence could be...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Clear communication can prevent assumptions from becoming bigger problems."
+        }
+    }
+    },
+    {
+    "pageNumber": 27,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Be Present With the People You Love",
+    "subtitle": "Presence is often made of small moments repeated.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Being present is not only being in the same room. It means giving attention, listening, following through, and making time for the people who matter. Work and responsibilities can make this difficult, which is why intention matters."
+        }
+    ],
+    "interactiveTable": {
         "title": "Be Present With the People You Love",
-        "subtitle": "Presence is often made of small moments repeated.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "Being present is not only being in the same room. It means giving attention, listening, following through, and making time for the people who\nmatter. Work and responsibilities can make this difficult, which is why intention matters.\nPerson / relationship What helps them feel valued? One action\nIf the people closest to me described how I show up, what would I hope they say—and what might they say today?\nLET'S WORK THROUGH IT A BUILDER'S REFLECTION"
-            }
+        "columns": [
+            { "key": "person", "label": "Person / relationship", "editable": true },
+            { "key": "valued", "label": "What helps them feel valued?", "editable": true },
+            { "key": "action", "label": "One action", "editable": true }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p27_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p27_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
-        }
+        "rows": [
+            { "id": "row1", "person": "", "valued": "", "action": "" },
+            { "id": "row2", "person": "", "valued": "", "action": "" }
+        ]
     },
-    {
-        "pageNumber": 28,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Recovery & Sleep Tracking",
-        "subtitle": "Growth happens during rest.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Evaluate your recovery habits to ensure sustainable progress." }
+    "middleCallout": {
+        "text": "If the people closest to me described how I show up, what would I hope they say—and what might they say today?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "Where am I saying yes when I mean no—or saying nothing and hoping someone will guess?",
+        "steps": [
+            "Identify the situation where your limit is not clear.",
+            "Name what you can and cannot reasonably offer.",
+            "Write a calm boundary using: \"I can ___. I cannot ___. If ___ happens, I will ___.\"",
+            "Consider safety and support before communicating a boundary in a difficult relationship."
         ],
-        "interactiveTable": {
-            "title": "Recovery Audit",
-            "columns": [
-                { "key": "metric", "label": "Recovery Metric", "editable": false },
-                { "key": "current", "label": "Current Status", "editable": true },
-                { "key": "target", "label": "Target Goal", "editable": true }
-            ],
-            "rows": [
-                { "id": "sleep", "metric": "Sleep Duration (Hours)" },
-                { "id": "quality", "metric": "Sleep Quality (1-10)" },
-                { "id": "stress", "metric": "Stress Management" }
-            ]
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: \"I can help Saturday morning, but I can't take this on every evening.\""
         },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "Where is sleep or recovery breaking down in my current schedule?",
-            "inputFields": [
-                { "id": "p28_rec", "prompt": "One recovery habit I will improve is...", "inputType": "text" }
-            ]
+        "inputFields": [
+            { 
+                "id": "p27_limit_communicate", 
+                "prompt": "The limit I need to communicate is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p27_words_use", 
+                "prompt": "The words I could use are...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Clear boundaries make expectations more honest; they are not a way to control another person."
         }
+    }
     },
     {
-        "pageNumber": 29,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "pageNumber": 28,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Purpose Can Change Shape",
+    "subtitle": "A changed plan does not mean a wasted life.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Some people know their direction early. Others discover it through responsibility, loss, opportunity, mistakes, and new seasons. A dream may change shape. The question becomes what matters now and what kind of contribution you want to make."
+        },
+        {
+            "type": "callout",
+            "title": "The next brick",
+            "text": "Choose one way to make this week more aligned with what matters now."
+        }
+    ],
+    "middleCallout": {
+        "text": "What matters to me now that may not have mattered five or ten years ago?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "If the people closest to me described how I show up, what would I hope they say—and what might they say today?",
+        "steps": [
+            "Choose one important relationship.",
+            "Think about the difference between your intention and the other person's experience.",
+            "Identify one behavior you can change: listening, time, follow-through, or attention.",
+            "Take one action that shows care without expecting instant praise."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Put your phone away during a conversation and ask a follow-up question instead of multitasking."
+        },
+        "inputFields": [
+            { 
+                "id": "p28_experience_me", 
+                "prompt": "I hope they experience me as...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p28_action_supports", 
+                "prompt": "One action that supports that is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Presence is communicated through small moments, not only good intentions."
+        }
+    }
+    },
+    {
+    "pageNumber": 29,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Work, Money & Freedom",
+    "subtitle": "Define what stability and freedom actually mean in your life.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Financial freedom can mean less debt, a savings cushion, flexibility, time with family, a career change, or the ability to handle an emergency. Vague wishes are hard to plan around. Clear definitions help you choose practical next steps."
+        },
+        {
+            "type": "paragraph",
+            "text": "Useful starting habits include understanding income and expenses, listing recurring bills, and reviewing debt terms. Seek qualified advice for tax, investment, debt, or legal decisions."
+        }
+    ],
+    "interactiveTable": {
         "title": "Work, Money & Freedom",
-        "subtitle": "Define what stability and freedom actually mean in your life.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "Financial freedom can mean less debt, a savings cushion, flexibility, time with family, a career change, or the ability to handle an\nemergency. Vague wishes are hard to plan around. Clear definitions help you choose practical next steps.\nWhat I want more of Why it matters One practical step\nStability\nTime / flexibility"
-            }
+        "columns": [
+            { "key": "want", "label": "What I want more of", "editable": false },
+            { "key": "why", "label": "Why it matters", "editable": true },
+            { "key": "step", "label": "One practical step", "editable": true }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p29_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p29_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
-        }
+        "rows": [
+            { "id": "row1", "want": "Stability", "why": "", "step": "" },
+            { "id": "row2", "want": "Time / flexibility", "why": "", "step": "" },
+            { "id": "row3", "want": "Learning / opportunity", "why": "", "step": "" }
+        ]
     },
-    {
-        "pageNumber": 30,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Mindset & Focus Architecture",
-        "subtitle": "Directing your attention with purpose.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Set clear boundaries for your mental focus." }
+    "middleCallout": {
+        "text": "If I had a little more financial stability, what would it allow me to do or protect?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What matters to me now that may not have mattered five or ten years ago?",
+        "steps": [
+            "Think about the responsibilities, relationships, and experiences that have shaped your current season.",
+            "Name what matters more now and what may matter less.",
+            "Ask whether your daily choices reflect those priorities.",
+            "Choose one action that aligns with the person you are becoming."
         ],
-        "interactiveTable": {
-            "title": "Attention Audit",
-            "columns": [
-                { "key": "domain", "label": "Domain", "editable": false },
-                { "key": "drain", "label": "Main Energy Drain", "editable": true },
-                { "key": "protect", "label": "Boundary to Set", "editable": true }
-            ],
-            "rows": [
-                { "id": "d1", "domain": "Morning Routine" },
-                { "id": "d2", "domain": "Work Block" },
-                { "id": "d3", "domain": "Evening Wind-down" }
-            ]
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: A new family responsibility may change what success, time, or ambition means to you."
         },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "What distraction can I eliminate starting today?",
-            "inputFields": [
-                { "id": "p30_focus", "prompt": "The distraction I am removing is...", "inputType": "text" }
-            ]
+        "inputFields": [
+            { 
+                "id": "p29_matters_more", 
+                "prompt": "What matters more to me now is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p29_honor_that", 
+                "prompt": "One way I will honor that is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Purpose can evolve as your life changes; growth includes learning to adapt."
         }
+    }
     },
     {
-        "pageNumber": 31,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "pageNumber": 30,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "The Builder's Code",
+    "subtitle": "The standard is not perfection. It is how we choose to treat ourselves and each other.",
+    "contentBlocks": [
+        {
+            "type": "callout",
+            "items": [
+                "We take responsibility for our choices and repair what we can.",
+                "We respect different starting points and life circumstances.",
+                "We encourage without judging or humiliating.",
+                "We tell the truth about progress and setbacks.",
+                "We protect the dignity and privacy of people's stories.",
+                "We ask before giving advice and listen before assuming.",
+                "We celebrate effort, character, and consistency—not just appearance.",
+                "We ask for help when we need it and offer support when we can."
+            ]
+        }
+    ],
+    "middleCallout": {
+        "text": "What kind of person do I want others to experience when they are around me?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "If I had a little more financial stability, what would it allow me to do or protect?",
+        "steps": [
+            "Describe what stability means to you in practical terms.",
+            "Choose one area to understand better: income, expenses, recurring bills, savings, or debt.",
+            "Identify one small information-gathering or organizing task.",
+            "For complex financial decisions, seek qualified advice rather than relying on a workbook."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Listing recurring expenses is a useful first step before deciding what to change."
+        },
+        "inputFields": [
+            { 
+                "id": "p30_more_stability", 
+                "prompt": "More stability would help me...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p30_practical_task", 
+                "prompt": "One practical task I can complete is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "A clear definition turns a broad wish into a goal you can begin to work toward."
+        }
+    }
+    },
+    {
+    "pageNumber": 31,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "A Community That Builds People",
+    "subtitle": "The goal is not to collect followers. It is to help people become contributors.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "A healthy community gives people a place to be human: to share a win, admit a setback, ask a question, and be treated with respect. The founder is not the hero of every story. Members should have room to help shape the culture."
+        },
+        {
+            "type": "paragraph",
+            "text": "Stories should be voluntary and shared with permission. No one should have to disclose private details to belong."
+        }
+    ],
+    "interactiveTable": {
         "title": "A Community That Builds People",
-        "subtitle": "The goal is not to collect followers. It is to help people become contributors.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "A healthy community gives people a place to be human: to share a win, admit a setback, ask a question, and be treated with respect. The\nfounder is not the hero of every story. Members should have room to help shape the culture.\nWhen Tradition Why it matters\nMonday Set Your Build Choose one intention.\nWednesday Midweek Check-In Name a win, obstacle, or request."
-            }
+        "columns": [
+            { "key": "when", "label": "When", "editable": false },
+            { "key": "tradition", "label": "Tradition", "editable": false },
+            { "key": "why", "label": "Why it matters", "editable": false }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p31_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p31_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
-        }
+        "rows": [
+            { "id": "row1", "when": "Monday", "tradition": "Set Your Build", "why": "Choose one intention." },
+            { "id": "row2", "when": "Wednesday", "tradition": "Midweek Check-In", "why": "Name a win, obstacle, or request." },
+            { "id": "row3", "when": "Friday", "tradition": "Builder's Proof", "why": "Recognize an action you followed through on." },
+            { "id": "row4", "when": "Monthly", "tradition": "Brick by Brick Challenge", "why": "Practice one shared habit." },
+            { "id": "row5", "when": "Ongoing", "tradition": "Builder's Table", "why": "Make room for honest conversations." }
+        ]
     },
-    {
-        "pageNumber": 32,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Milestone & Progress Review",
-        "subtitle": "Measuring what matters.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Track your progress objectively without judgment." }
+    "middleCallout": {
+        "text": "What would make a person feel seen, heard, respected, and encouraged here?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What kind of person do I want others to experience when they are around me?",
+        "steps": [
+            "Think about how people may feel after interacting with you.",
+            "Choose one Builder value: honesty, respect, patience, encouragement, accountability, or humility.",
+            "Recall a recent moment when you practiced it—or could have done better.",
+            "Choose one behavior to practice this week."
         ],
-        "interactiveTable": {
-            "title": "Progress Matrix",
-            "columns": [
-                { "key": "pillar", "label": "Pillar", "editable": false },
-                { "key": "win", "label": "Recent Win", "editable": true },
-                { "key": "adjust", "label": "Area to Adjust", "editable": true }
-            ],
-            "rows": [
-                { "id": "p_body", "pillar": "BODY" },
-                { "id": "p_mind", "pillar": "MIND" },
-                { "id": "p_life", "pillar": "LIFE" }
-            ]
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Accountability can sound like a respectful check-in, not public embarrassment or pressure."
         },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "What progress am I failing to give myself credit for?",
-            "inputFields": [
-                { "id": "p32_win", "prompt": "A win I want to acknowledge is...", "inputType": "text" }
-            ]
+        "inputFields": [
+            { 
+                "id": "p31_quality_practice", 
+                "prompt": "The quality I want to practice is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p31_behavior_show", 
+                "prompt": "A behavior that will show it is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Community culture is created through the way members treat one another every day."
         }
+    }
     },
     {
-        "pageNumber": 33,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "pageNumber": 32,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Help Someone Else Take a Step",
+    "subtitle": "A Builder does not need to have all the answers to be useful.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "You can encourage someone by listening, sharing a lesson you have actually learned, helping them identify a next step, or connecting them with qualified support. You do not need to fix their life."
+        },
+        {
+            "type": "callout",
+            "title": "Support without taking over",
+            "items": [
+                "Ask what kind of support they want.",
+                "Listen before offering advice.",
+                "Share your experience without presenting it as a universal rule.",
+                "Respect their choices and boundaries.",
+                "Know when a challenge needs professional support."
+            ]
+        }
+    ],
+    "middleCallout": {
+        "text": "Who could use encouragement from me—and what would support look like without trying to control their outcome?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What would make a person feel seen, heard, respected, and encouraged here?",
+        "steps": [
+            "Think about a time you felt genuinely welcomed or supported.",
+            "Identify what made the difference: someone listened, remembered, included, or followed up.",
+            "Choose a simple way to offer that experience to another person.",
+            "Protect privacy. Never pressure someone to share a personal story to belong."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: Welcome a new member, ask what support they want, and respect their answer."
+        },
+        "inputFields": [
+            { 
+                "id": "p32_feel_included", 
+                "prompt": "I feel included when...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p32_help_someone", 
+                "prompt": "I can help someone feel included by...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Belonging grows when people feel safe to participate as themselves."
+        }
+    }
+    },
+    {
+    "pageNumber": 33,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "The 30-Day Foundation",
+    "subtitle": "Do not rebuild your whole life in one month. Build proof that you can keep showing up.",
+    "interactiveTable": {
         "title": "The 30-Day Foundation",
-        "subtitle": "Do not rebuild your whole life in one month. Build proof that you can keep showing up.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "Week Focus BODY MIND LIFE\n1 Notice Observe energy and Notice thoughts and Review time and\nmovement. reactions. commitments.\n2 Simplify Choose repeatable Create one focus habit. Make one routine easier.\nmovement."
-            }
+        "columns": [
+            { "key": "week", "label": "Week", "editable": false },
+            { "key": "focus", "label": "Focus", "editable": false },
+            { "key": "body", "label": "BODY", "editable": false },
+            { "key": "mind", "label": "MIND", "editable": false },
+            { "key": "life", "label": "LIFE", "editable": false }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
+        "rows": [
+            { "id": "row1", "week": "1", "focus": "Notice", "body": "Observe energy and movement.", "mind": "Notice thoughts and reactions.", "life": "Review time and commitments." },
+            { "id": "row2", "week": "2", "focus": "Simplify", "body": "Choose repeatable movement.", "mind": "Create one focus habit.", "life": "Make one routine easier." },
+            { "id": "row3", "week": "3", "focus": "Strengthen", "body": "Repeat a manageable plan.", "mind": "Practice the pause.", "life": "Have one useful conversation." },
+            { "id": "row4", "week": "4", "focus": "Reflect", "body": "Review recovery and consistency.", "mind": "Name what you learned.", "life": "Choose the next priority." }
+        ]
+    },
+    "middleCallout": {
+        "text": "What would make this month meaningful even if nothing dramatic changes?"
+    },
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "Who could use encouragement from me—and what would support look like without trying to control their outcome?",
+        "steps": [
+            "Think of someone who may appreciate a check-in or practical support.",
+            "Ask what kind of support they want before offering advice.",
+            "Share a relevant experience without presenting it as the only answer.",
+            "Offer one practical next step or help them find qualified support if needed."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: \"Would it help if I listened, brainstormed with you, or helped you find a resource?\""
+        },
+        "inputFields": [
+            { 
+                "id": "p33_someone_encourage", 
+                "prompt": "Someone I can encourage is...", 
+                "inputType": "text" 
             },
-            "inputFields": [
-                {
-                    "id": "p33_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p33_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
+            { 
+                "id": "p33_support_offer", 
+                "prompt": "The support I can offer is...", 
+                "inputType": "text" 
             }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "You can help someone take a step without taking responsibility for their whole journey."
         }
+    }
     },
     {
-        "pageNumber": 34,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Building Lasting Community",
-        "subtitle": "You grow faster and stronger with the right people around you.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Identify who supports your growth and who drains your momentum." }
-        ],
-        "interactiveTable": {
-            "title": "Environment & Support",
-            "columns": [
-                { "key": "relation", "label": "Relationship / Circle", "editable": false },
-                { "key": "impact", "label": "Impact on Growth", "editable": true },
-                { "key": "action", "label": "Intentional Action", "editable": true }
-            ],
-            "rows": [
-                { "id": "r1", "relation": "Close Friends" },
-                { "id": "r2", "relation": "Work Environment" },
-                { "id": "r3", "relation": "Mentorship / Community" }
-            ]
-        },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "Who do I need to lean on or communicate with more openly?",
-            "inputFields": [
-                { "id": "p34_comm", "prompt": "The person I will connect with is...", "inputType": "text" }
-            ]
+    "pageNumber": 34,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Your Daily Builder Calendar",
+    "subtitle": "Track actions that matter. Do not turn the calendar into another source of pressure.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Mark a box when you complete an intentional action. BODY can include movement, nourishment, or recovery. MIND can include reflection, focus, learning, or pausing before reacting. LIFE can include planning, family, communication, responsibility, or contribution."
         }
+    ],
+    "interactiveTable": {
+        "title": "Your Daily Builder Calendar",
+        "columns": [
+            { "key": "day", "label": "Day", "editable": false },
+            { "key": "body", "label": "BODY", "editable": true, "type": "checkbox" },
+            { "key": "mind", "label": "MIND", "editable": true, "type": "checkbox" },
+            { "key": "life", "label": "LIFE", "editable": true, "type": "checkbox" },
+            { "key": "win", "label": "One note / small win", "editable": true, "type": "text" }
+        ],
+        "rows": [
+            { "id": "row1", "day": "01", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row2", "day": "02", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row3", "day": "03", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row4", "day": "04", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row5", "day": "05", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row6", "day": "06", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row7", "day": "07", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row8", "day": "08", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row9", "day": "09", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row10", "day": "10", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row11", "day": "11", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row12", "day": "12", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row13", "day": "13", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row14", "day": "14", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row15", "day": "15", "body": false, "mind": false, "life": false, "win": "" }
+        ]
+    },
+    "middleCallout": {
+        "text": "A missed day does not erase progress. Pick up where you are."
+    }
     },
     {
-        "pageNumber": 35,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Quarterly Blueprint",
-        "subtitle": "Laying out the next 90 days.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Establish clear targets for the upcoming quarter." }
-        ],
-        "interactiveTable": {
-            "title": "90-Day Targets",
-            "columns": [
-                { "key": "category", "label": "Category", "editable": false },
-                { "key": "goal", "label": "Core Goal", "editable": true },
-                { "key": "firststep", "label": "First Milestone", "editable": true }
-            ],
-            "rows": [
-                { "id": "q_body", "category": "Body / Health" },
-                { "id": "q_mind", "category": "Mind / Skills" },
-                { "id": "q_life", "category": "Life / Purpose" }
-            ]
-        },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "If I only accomplished one major thing this quarter, what must it be?",
-            "inputFields": [
-                { "id": "p35_goal", "prompt": "My primary 90-day target is...", "inputType": "text" }
-            ]
+    "pageNumber": 35,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Your Daily Builder Calendar — Continued",
+    "subtitle": "The point is awareness and action, not a perfect streak.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "Continue the same month. Mark the areas where you took an intentional action and use the note space to recognize a small win, a lesson, or something you want to remember."
         }
+    ],
+    "interactiveTable": {
+        "title": "Your Daily Builder Calendar — Continued",
+        "columns": [
+            { "key": "day", "label": "Day", "editable": false },
+            { "key": "body", "label": "BODY", "editable": true, "type": "checkbox" },
+            { "key": "mind", "label": "MIND", "editable": true, "type": "checkbox" },
+            { "key": "life", "label": "LIFE", "editable": true, "type": "checkbox" },
+            { "key": "win", "label": "One note / small win", "editable": true, "type": "text" }
+        ],
+        "rows": [
+            { "id": "row16", "day": "16", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row17", "day": "17", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row18", "day": "18", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row19", "day": "19", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row20", "day": "20", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row21", "day": "21", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row22", "day": "22", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row23", "day": "23", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row24", "day": "24", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row25", "day": "25", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row26", "day": "26", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row27", "day": "27", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row28", "day": "28", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row29", "day": "29", "body": false, "mind": false, "life": false, "win": "" },
+            { "id": "row30", "day": "30", "body": false, "mind": false, "life": false, "win": "" }
+        ]
+    },
+    "reflectionExercise": {
+        "header": "End-of-month reflection",
+        "subHeader": "",
+        "question": "",
+        "steps": [],
+        "inputFields": [
+            { 
+                "id": "p35_pattern_noticed", 
+                "prompt": "A pattern I noticed...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p35_small_win", 
+                "prompt": "A small win I want to recognize...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p35_adjustment_next_month", 
+                "prompt": "One adjustment for next month...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "",
+            "text": ""
+        }
+    }
     },
     {
         "pageNumber": 35,
@@ -1629,61 +1945,88 @@
         }
     },
     {
-        "pageNumber": 36,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Weekly Execution Planner",
-        "subtitle": "Turning grand plans into ordinary daily execution.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Map out your upcoming week with intention." }
-        ],
-        "interactiveTable": {
-            "title": "Weekly Priorities",
-            "columns": [
-                { "key": "priority", "label": "Priority Level", "editable": false },
-                { "key": "task", "label": "Action Item", "editable": true },
-                { "key": "scheduled", "label": "Scheduled Day / Time", "editable": true }
-            ],
-            "rows": [
-                { "id": "pr1", "priority": "Top Priority" },
-                { "id": "pr2", "priority": "Secondary Focus" },
-                { "id": "pr3", "priority": "Maintenance Task" }
-            ]
-        },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "What will make this upcoming week a success?",
-            "inputFields": [
-                { "id": "p36_success", "prompt": "Success this week looks like...", "inputType": "text" }
+    "pageNumber": 36,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "The Weekly Builder Check-In",
+    "subtitle": "A short review can prevent a small drift from becoming a long detour.",
+    "contentBlocks": [
+        {
+            "type": "callout",
+            "title": "Look back without judgment",
+            "items": [
+                "What did I follow through on?",
+                "What felt harder than expected?",
+                "What gave me energy? What drained it?",
+                "Where did I react in a way I want to improve?",
+                "Who did I connect with or support?"
             ]
         }
+    ],
+    "interactiveTable": {
+        "title": "The Weekly Builder Check-In",
+        "columns": [
+            { "key": "pillar", "label": "Pillar", "editable": false },
+            { "key": "priority", "label": "One priority", "editable": true },
+            { "key": "when", "label": "When will I do it?", "editable": true }
+        ],
+        "rows": [
+            { "id": "row1", "pillar": "BODY", "priority": "", "when": "" },
+            { "id": "row2", "pillar": "MIND", "priority": "", "when": "" },
+            { "id": "row3", "pillar": "LIFE", "priority": "", "when": "" }
+        ]
+    },
+    "middleCallout": {
+        "text": "What can I remove, simplify, or ask for help with so the plan has a real chance?"
+    }
     },
     {
-        "pageNumber": 37,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "The Builder's Creed",
-        "subtitle": "Solidifying your personal operating standard.",
-        "contentBlocks": [
-            { "type": "paragraph", "text": "Summarize your non-negotiable standards moving forward." }
-        ],
-        "interactiveTable": {
-            "title": "Operating Standards",
-            "columns": [
-                { "key": "standard", "label": "Standard Category", "editable": false },
-                { "key": "rule", "label": "My Personal Rule", "editable": true }
-            ],
-            "rows": [
-                { "id": "s1", "standard": "Health & Body" },
-                { "id": "s2", "standard": "Mind & Focus" },
-                { "id": "s3", "standard": "Relationships & Life" }
-            ]
-        },
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "question": "What standard am I committing to uphold no matter what?",
-            "inputFields": [
-                { "id": "p37_creed", "prompt": "My unbreakable standard is...", "inputType": "text" }
-            ]
-        }
+  "pageNumber": 37,
+  "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+  "title": "When You Need More Than a Page",
+  "subtitle": "Some doors are best opened with another person beside you.",
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "text": "A guide can help you reflect, but it cannot replace every kind of support. Persistent emotional distress, trauma, depression, anxiety, disordered eating, substance use, injury, unsafe relationships, or serious financial and legal problems may need qualified help. Asking for it is not a failure of discipline."
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose professionals carefully. Look for relevant qualifications, clear boundaries, respect, and advice that does not promise guaranteed outcomes. If you are in immediate danger, contact local emergency services. In the United States, call or text 988 for suicide or mental-health crisis support."
+    },
+    {
+      "type": "callout",
+      "text": "What kind of support would help me take the next safe and constructive step?"
+    }
+  ],
+  "reflectionExercise": {
+    "header": "LET'S WORK THROUGH IT",
+    "subHeader": "START WITH THE QUESTION",
+    "question": "What can I remove, simplify, or ask for help with so the plan has a real chance?",
+    "steps": [
+      "Look at the priorities you set for BODY, MIND, and LIFE.",
+      "Find one obstacle that makes the plan harder than it needs to be.",
+      "Decide whether to remove a task, simplify a habit, change the timing, or ask someone for help.",
+      "Write the adjustment into your coming week."
+    ],
+    "example": {
+      "label": "A QUICK EXAMPLE",
+      "text": "Example: If the week is overloaded, reduce the number of planned actions rather than abandoning the whole plan."
+    },
+    "inputFields": [
+      {
+        "id": "p37_obstacle",
+        "prompt": "The obstacle I can reduce is..."
+      },
+      {
+        "id": "p37_adjustment",
+        "prompt": "The adjustment I will make is..."
+      }
+    ],
+    "whyItMatters": {
+      "title": "WHY THIS MATTERS",
+      "text": "A realistic plan is not the fullest plan. It is the one you can actually carry out."
+    }
+  }
     },
     {
         "pageNumber": 38,

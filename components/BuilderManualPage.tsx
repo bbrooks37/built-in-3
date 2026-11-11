@@ -13,7 +13,7 @@ interface ManualPageProps {
 
 export default function BuilderManualPage({ pageData, totalPages }: ManualPageProps) {
   const router = useRouter();
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [answers, setAnswers] = useState<Record<string, any>>({});
   const [savedStatus, setSavedStatus] = useState(false);
   const [pageInput, setPageInput] = useState<string>(String(pageData.pageNumber));
 
@@ -23,7 +23,11 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
   useEffect(() => {
     const saved = localStorage.getItem(storageKey);
     if (saved) {
-      setAnswers(JSON.parse(saved));
+      try {
+        setAnswers(JSON.parse(saved));
+      } catch (e) {
+        setAnswers({});
+      }
     } else {
       setAnswers({});
     }
@@ -34,8 +38,8 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
     setPageInput(String(pageData.pageNumber));
   }, [pageData.pageNumber]);
 
-  // Save answers to localStorage whenever the user types
-  const handleInputChange = (fieldId: string, value: string) => {
+  // Save answers to localStorage whenever the user interacts with inputs or checkboxes
+  const handleInputChange = (fieldId: string, value: any) => {
     const updated = { ...answers, [fieldId]: value };
     setAnswers(updated);
     localStorage.setItem(storageKey, JSON.stringify(updated));
@@ -124,7 +128,6 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
             BUILT IN 3
           </p>
 
-          {/* Custom PNG Logo Container with sizes prop */}
           <div className="w-36 h-36 bg-neutral-900 border border-neutral-800 rounded-2xl flex items-center justify-center shadow-2xl shadow-lime-950/20 p-4 relative overflow-hidden">
             <Image
               src="/logos/b3.png"
@@ -162,7 +165,6 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
           </div>
         </main>
 
-        {/* Sticky Bottom Navigation Footer */}
         <footer className="border-t border-neutral-800 bg-neutral-950/90 backdrop-blur sticky bottom-0 z-20 py-4 px-6 shadow-2xl">
           <div className="max-w-4xl mx-auto flex items-center justify-end">
             <Link
@@ -297,7 +299,7 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
             })}
           </div>
 
-          {/* Interactive Table (if present on this page) */}
+          {/* Interactive Table (Supports standard text inputs and checkboxes) */}
           {pageData.interactiveTable && (
             <div className="overflow-x-auto border border-neutral-800 rounded-xl bg-neutral-900/40">
               <table className="w-full text-left border-collapse">
@@ -313,32 +315,44 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
                 <tbody>
                   {pageData.interactiveTable.rows.map((row: any) => (
                     <tr key={row.id} className="border-b border-neutral-800/60 last:border-0 align-top">
-                      {pageData.interactiveTable.columns.map((col: any) => (
-                        <td key={col.key} className="p-3">
-                          {col.editable ? (
-                            <div className="flex flex-col gap-1.5">
-                              {row[col.key] && (
-                                <span className="text-xs text-neutral-400 font-medium">
-                                  {row[col.key]}
-                                </span>
-                              )}
-                              <input
-                                type="text"
-                                value={answers[`table_${row.id}_${col.key}`] || ""}
-                                onChange={(e) =>
-                                  handleInputChange(`table_${row.id}_${col.key}`, e.target.value)
-                                }
-                                placeholder="Write here..."
-                                className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-3 py-2 text-sm text-neutral-100 focus:border-lime-400 focus:outline-none placeholder:text-neutral-600"
-                              />
-                            </div>
-                          ) : (
-                            <span className="font-medium text-neutral-200">
-                              {row[col.key] || row.label}
-                            </span>
-                          )}
-                        </td>
-                      ))}
+                      {pageData.interactiveTable.columns.map((col: any) => {
+                        const cellKey = `table_${row.id}_${col.key}`;
+                        return (
+                          <td key={col.key} className="p-3">
+                            {col.editable ? (
+                              col.type === "checkbox" ? (
+                                <div className="flex items-center justify-center sm:justify-start h-full">
+                                  <input
+                                    type="checkbox"
+                                    checked={!!answers[cellKey]}
+                                    onChange={(e) => handleInputChange(cellKey, e.target.checked)}
+                                    className="w-4 h-4 accent-lime-400 bg-neutral-950 border-neutral-800 rounded cursor-pointer"
+                                  />
+                                </div>
+                              ) : (
+                                <div className="flex flex-col gap-1.5">
+                                  {row[col.key] && (
+                                    <span className="text-xs text-neutral-400 font-medium">
+                                      {row[col.key]}
+                                    </span>
+                                  )}
+                                  <input
+                                    type="text"
+                                    value={answers[cellKey] || ""}
+                                    onChange={(e) => handleInputChange(cellKey, e.target.value)}
+                                    placeholder="Write here..."
+                                    className="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-3 py-2 text-sm text-neutral-100 focus:border-lime-400 focus:outline-none placeholder:text-neutral-600"
+                                  />
+                                </div>
+                              )
+                            ) : (
+                              <span className="font-medium text-neutral-200">
+                                {row[col.key] || row.label}
+                              </span>
+                            )}
+                          </td>
+                        );
+                      })}
                     </tr>
                   ))}
                 </tbody>
