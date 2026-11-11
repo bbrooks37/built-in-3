@@ -272,7 +272,7 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
                 return (
                   <blockquote
                     key={idx}
-                    className="border-l-4 border-lime-400 pl-4 py-3 my-6 bg-neutral-900/60 rounded-r-lg space-y-2"
+                    className="border-l-4 border-lime-400 pl-4 py-3 my-6 bg-neutral-900/60 rounded-r-lg space-y-3"
                   >
                     {block.title && (
                       <span className="block text-lime-400 font-bold text-sm not-italic mb-1">
@@ -280,12 +280,30 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
                       </span>
                     )}
                     {block.items ? (
-                      <ul className="list-disc list-inside space-y-1.5 text-white font-semibold italic">
-                        {block.items.map((item: string, i: number) => (
-                          <li key={i} className="leading-relaxed">
-                            <span className="not-italic">{item}</span>
-                          </li>
-                        ))}
+                      <ul className="space-y-3 text-white font-semibold italic">
+                        {block.items.map((item: string, i: number) => {
+                          if (item.includes("________________")) {
+                            const [labelPart] = item.split("________________");
+                            const fieldId = `commitment_line_${i}`;
+                            return (
+                              <li key={i} className="list-none flex flex-col sm:flex-row sm:items-center gap-2 not-italic">
+                                <span className="text-neutral-200 font-normal text-sm">{labelPart}</span>
+                                <input
+                                  type="text"
+                                  value={answers[fieldId] || ""}
+                                  onChange={(e) => handleInputChange(fieldId, e.target.value)}
+                                  placeholder="Type here..."
+                                  className="flex-1 bg-neutral-950 border border-neutral-800 rounded-lg px-3 py-1.5 text-sm text-neutral-100 focus:border-lime-400 focus:outline-none placeholder:text-neutral-600 font-normal"
+                                />
+                              </li>
+                            );
+                          }
+                          return (
+                            <li key={i} className="list-disc list-inside leading-relaxed">
+                              <span className="not-italic">{item}</span>
+                            </li>
+                          );
+                        })}
                       </ul>
                     ) : (
                       <span className="block text-white font-semibold italic">
