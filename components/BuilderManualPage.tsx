@@ -15,6 +15,7 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
   const router = useRouter();
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [savedStatus, setSavedStatus] = useState(false);
+  const [pageInput, setPageInput] = useState<string>(String(pageData.pageNumber));
 
   const storageKey = `built_in_3_page_${pageData.pageNumber}`;
 
@@ -28,6 +29,11 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
     }
   }, [storageKey]);
 
+  // Keep input synced when navigating between pages
+  useEffect(() => {
+    setPageInput(String(pageData.pageNumber));
+  }, [pageData.pageNumber]);
+
   // Save answers to localStorage whenever the user types
   const handleInputChange = (fieldId: string, value: string) => {
     const updated = { ...answers, [fieldId]: value };
@@ -38,10 +44,21 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
     setTimeout(() => setSavedStatus(false), 1500);
   };
 
-  const handlePageSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const pageNum = e.target.value;
-    if (pageNum) {
-      router.push(`/manual/${pageNum}`);
+  const navigateToPage = (num: number) => {
+    const clamped = Math.max(1, Math.min(totalPages, num));
+    setPageInput(String(clamped));
+    if (clamped !== pageData.pageNumber) {
+      router.push(`/manual/${clamped}`);
+    }
+  };
+
+  const handlePageSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const parsed = parseInt(pageInput, 10);
+    if (!isNaN(parsed)) {
+      navigateToPage(parsed);
+    } else {
+      setPageInput(String(pageData.pageNumber));
     }
   };
 
@@ -57,23 +74,47 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
             <div className="flex items-center gap-3">
               <Link
                 href="/manual/1"
-                className="flex items-center gap-1.5 text-xs text-lime-400 hover:text-lime-300 font-semibold px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 transition"
+                className="flex items-center gap-1.5 text-xs text-lime-400 hover:text-lime-300 font-semibold px-2.5 py-1.5 rounded-lg bg-neutral-900 border border-neutral-800 transition"
               >
                 <Home className="w-3.5 h-3.5" /> Home
               </Link>
-              <select
-                aria-label="Select page number to jump to"
-                onChange={handlePageSelect}
-                defaultValue=""
-                className="bg-neutral-900 border border-neutral-800 text-xs text-neutral-300 rounded-md px-2 py-1 focus:border-lime-400 focus:outline-none cursor-pointer"
+              <form
+                onSubmit={handlePageSubmit}
+                className="flex items-center gap-1 bg-neutral-900 border border-neutral-800 rounded-lg px-2 py-1 focus-within:border-lime-400 transition"
               >
-                <option value="" disabled>Jump to page...</option>
-                {Array.from({ length: totalPages }, (_, i) => (
-                  <option key={i + 1} value={i + 1}>
-                    Page {i + 1}
-                  </option>
-                ))}
-              </select>
+                <button
+                  type="button"
+                  onClick={() => navigateToPage(pageData.pageNumber - 1)}
+                  disabled={pageData.pageNumber <= 1}
+                  aria-label="Previous page"
+                  className="p-0.5 text-neutral-400 hover:text-lime-400 disabled:opacity-30 disabled:hover:text-neutral-400 transition"
+                >
+                  <ChevronLeft className="w-3.5 h-3.5" />
+                </button>
+
+                <span className="text-xs text-neutral-400 pl-1">Page</span>
+                <input
+                  type="number"
+                  min={1}
+                  max={totalPages}
+                  value={pageInput}
+                  onChange={(e) => setPageInput(e.target.value)}
+                  onBlur={handlePageSubmit}
+                  aria-label="Page number"
+                  className="w-10 bg-transparent text-center text-xs font-bold text-lime-400 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                />
+                <span className="text-xs text-neutral-500 pr-1">/ {totalPages}</span>
+
+                <button
+                  type="button"
+                  onClick={() => navigateToPage(pageData.pageNumber + 1)}
+                  disabled={pageData.pageNumber >= totalPages}
+                  aria-label="Next page"
+                  className="p-0.5 text-neutral-400 hover:text-lime-400 disabled:opacity-30 disabled:hover:text-neutral-400 transition"
+                >
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+              </form>
             </div>
           </div>
         </header>
@@ -164,18 +205,43 @@ export default function BuilderManualPage({ pageData, totalPages }: ManualPagePr
               >
                 <Home className="w-3.5 h-3.5" /> Home
               </Link>
-              <select
-                aria-label="Select page number to jump to"
-                value={pageData.pageNumber}
-                onChange={handlePageSelect}
-                className="bg-neutral-900 border border-neutral-800 text-xs text-neutral-200 font-medium rounded-lg px-2.5 py-1.5 focus:border-lime-400 focus:outline-none cursor-pointer"
+              <form
+                onSubmit={handlePageSubmit}
+                className="flex items-center gap-1 bg-neutral-900 border border-neutral-800 rounded-lg px-2 py-1 focus-within:border-lime-400 transition"
               >
-                {Array.from({ length: totalPages }, (_, i) => (
-                  <option key={i + 1} value={i + 1}>
-                    Page {i + 1} of {totalPages}
-                  </option>
-                ))}
-              </select>
+                <button
+                  type="button"
+                  onClick={() => navigateToPage(pageData.pageNumber - 1)}
+                  disabled={pageData.pageNumber <= 1}
+                  aria-label="Previous page"
+                  className="p-0.5 text-neutral-400 hover:text-lime-400 disabled:opacity-30 disabled:hover:text-neutral-400 transition"
+                >
+                  <ChevronLeft className="w-3.5 h-3.5" />
+                </button>
+
+                <span className="text-xs text-neutral-400 pl-1">Page</span>
+                <input
+                  type="number"
+                  min={1}
+                  max={totalPages}
+                  value={pageInput}
+                  onChange={(e) => setPageInput(e.target.value)}
+                  onBlur={handlePageSubmit}
+                  aria-label="Page number"
+                  className="w-10 bg-transparent text-center text-xs font-bold text-lime-400 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                />
+                <span className="text-xs text-neutral-500 pr-1">/ {totalPages}</span>
+
+                <button
+                  type="button"
+                  onClick={() => navigateToPage(pageData.pageNumber + 1)}
+                  disabled={pageData.pageNumber >= totalPages}
+                  aria-label="Next page"
+                  className="p-0.5 text-neutral-400 hover:text-lime-400 disabled:opacity-30 disabled:hover:text-neutral-400 transition"
+                >
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+              </form>
             </div>
           </div>
           <div className="w-full bg-neutral-900 h-1">
