@@ -2029,132 +2029,149 @@
   }
     },
     {
-        "pageNumber": 38,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "The Next Door",
-        "subtitle": "Part 1 is the foundation. The building continues.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "This manual is not meant to make you feel like you have life figured out. It is meant to help you ask better questions, make clearer choices,\nand take actions that reflect what matters to you.\nFuture parts can go deeper into mindset, training and performance, relationships and leadership, purposeful living, and community building.\nEach part should add real value—not repeat the same lessons with a new cover.\nWhat is one thing I understand differently after working through this guide?"
-            }
-        ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p38_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p38_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
+    "pageNumber": 38,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "The Next Door",
+    "subtitle": "Part 1 is the foundation. The building continues.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "This manual is not meant to make you feel like you have life figured out. It is meant to help you ask better questions, make clearer choices, and take actions that reflect what matters to you."
+        },
+        {
+            "type": "paragraph",
+            "text": "Future parts can go deeper into mindset, training and performance, relationships and leadership, purposeful living, and community building. Each part should add real value—not repeat the same lessons with a new cover."
+        },
+        {
+            "type": "callout",
+            "text": "What is one thing I understand differently after working through this guide?"
+        },
+        {
+            "type": "callout",
+            "text": "What action will I take in the next 24 hours?"
+        },
+        {
+            "type": "callout",
+            "text": "You do not have to be finished to help someone else take a first step. Keep Building. ■"
         }
-    },
-    {
-        "pageNumber": 39,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Your Builder Commitment",
-        "subtitle": "The next brick is not a promise to be perfect. It is a decision to keep participating in your own life.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "I will be honest about where I am. I will take responsibility for what I can control. I will respect my own process and the journeys of others. I\nwill keep learning, ask for help when I need it, and make room for progress without demanding perfection.\nMy commitment\nThe area I am ready to work on: ______________________________________________________________\nThe first action I will take: __________________________________________________________________"
+    ],
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What kind of support would help me take the next safe and constructive step?",
+        "steps": [
+            "Name the challenge without sharing anything you are not comfortable recording.",
+            "Decide what kind of support would fit: trusted person, qualified professional, practical resource, or emergency help.",
+            "Check the person's qualifications and whether you feel respected and safe.",
+            "Take one contact or information-gathering step. You do not have to solve everything alone."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: A persistent mental-health concern may call for a licensed professional, not only more discipline or another workbook exercise."
+        },
+        "inputFields": [
+            { 
+                "id": "p38_support_need", 
+                "prompt": "The support I may need is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p38_safe_step", 
+                "prompt": "One safe step toward it is...", 
+                "inputType": "text" 
             }
         ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p39_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p39_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
-        }
-    },
-    {
-        "pageNumber": 40,
-        "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
-        "title": "Important Notes",
-        "subtitle": "A thoughtful guide should be honest about what it can and cannot do.",
-        "contentBlocks": [
-            {
-                "type": "paragraph",
-                "text": "This guide provides general education and reflective exercises. It is not psychotherapy, diagnosis, medical care, individualized exercise\nprogramming, nutrition therapy, financial advice, or legal advice. Consult appropriately qualified professionals for guidance specific to your\ncircumstances.\nExercise examples are flexible options, not a prescribed plan. Adapt activity to your ability and health status. Stop and seek appropriate\nmedical care for concerning symptoms. Food and wellness needs vary between individuals."
-            }
-        ],
-        "reflectionExercise": {
-            "header": "LET'S WORK THROUGH IT",
-            "subHeader": "START WITH THE QUESTION",
-            "question": "Which pillar or area needs your focus right now?",
-            "steps": [
-                "Review the core concept on this page.",
-                "Be honest about your current habits.",
-                "Identify one small adjustment.",
-                "Commit to taking action within 24 hours."
-            ],
-            "example": {
-                "label": "A QUICK EXAMPLE",
-                "text": "Keep your first step small enough that you can easily complete it today."
-            },
-            "inputFields": [
-                {
-                    "id": "p40_reflection_1",
-                    "prompt": "My honest reflection is...",
-                    "inputType": "text"
-                },
-                {
-                    "id": "p40_reflection_2",
-                    "prompt": "The next step I will take is...",
-                    "inputType": "text"
-                }
-            ],
-            "whyItMatters": {
-                "title": "WHY THIS MATTERS",
-                "text": "Consistent small actions compound into lasting life changes."
-            }
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Knowing when to seek support is part of taking responsibility for yourself."
         }
     }
-]
+    },
+    {
+    "pageNumber": 39,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL — PART 1",
+    "title": "Your Builder Commitment",
+    "subtitle": "The next brick is not a promise to be perfect. It is a decision to keep participating in your own life.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "I will be honest about where I am. I will take responsibility for what I can control. I will respect my own process and the journeys of others. I will keep learning, ask for help when I need it, and make room for progress without demanding perfection."
+        },
+        {
+            "type": "callout",
+            "title": "My commitment",
+            "items": [
+                "The area I am ready to work on: ________________________________________________________________",
+                "The first action I will take: ____________________________________________________________________",
+                "The person I can ask for support: ______________________________________________________________",
+                "The date I will review my progress: _____________________________________________________________"
+            ]
+        },
+        {
+            "type": "callout",
+            "text": "Words can lie. Actions don't. Keep Building."
+        }
+    ],
+    "reflectionExercise": {
+        "header": "LET'S WORK THROUGH IT",
+        "subHeader": "START WITH THE QUESTION",
+        "question": "What is one thing I understand differently after working through this guide?",
+        "steps": [
+            "Think back to the first pages and compare them with where you are now.",
+            "Name one belief, habit, or priority you see differently.",
+            "Identify the page or exercise that challenged you most.",
+            "Choose one action to carry into the next seven days."
+        ],
+        "example": {
+            "label": "A QUICK EXAMPLE",
+            "text": "Example: You may realize that consistency means returning after disruption, not never missing a day."
+        },
+        "inputFields": [
+            { 
+                "id": "p39_differently_now", 
+                "prompt": "One thing I see differently now is...", 
+                "inputType": "text" 
+            },
+            { 
+                "id": "p39_action_carry", 
+                "prompt": "The action I will carry forward is...", 
+                "inputType": "text" 
+            }
+        ],
+        "whyItMatters": {
+            "title": "WHY THIS MATTERS",
+            "text": "Reflection becomes useful when it changes what you choose to do next."
+        }
+    }
+    },
+    {
+    "pageNumber": 40,
+    "chapterTitle": "BUILT IN 3 • THE BUILDER'S MANUAL • PART 1",
+    "title": "Important Notes",
+    "subtitle": "A thoughtful guide should be honest about what it can and cannot do.",
+    "contentBlocks": [
+        {
+            "type": "paragraph",
+            "text": "This guide provides general education and reflective exercises. It is not psychotherapy, diagnosis, medical care, individualized exercise programming, nutrition therapy, financial advice, or legal advice. Consult appropriately qualified professionals for guidance specific to your circumstances."
+        },
+        {
+            "type": "paragraph",
+            "text": "Exercise examples are flexible options, not a prescribed plan. Adapt activity to your ability and health status. Stop and seek appropriate medical care for concerning symptoms. Food and wellness needs vary between individuals."
+        },
+        {
+            "type": "callout",
+            "title": "Before commercial release",
+            "items": [
+                "Have qualified fitness and health professionals review exercise and wellness content.",
+                "Have a qualified editor review clarity, grammar, and accessibility.",
+                "Verify legal, brand, trademark, and sales language.",
+                "Obtain permission for any member story, testimonial, photo, or identifying detail.",
+                "Add real community contributions only when voluntary, accurate, and approved."
+            ]
+        },
+        {
+            "type": "callout",
+            "text": "BUILT IN 3 — Build Your Body. Build Your Mind. Build Your Life. Brick by Brick."
+        }
+    ]
+}]
